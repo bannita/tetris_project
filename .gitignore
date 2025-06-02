@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.flaskenv
+
+# Environment
+.env
+.flaskenv
+.env.save
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Node (if you ever use npm/yarn for JS tools)
+node_modules/
+
+# Docker
+*.log
+*.pid
+*.sock
+*.db
+*.sqlite3
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*$py.class
+
+# Unit test / coverage
+htmlcov/
+coverage.xml
+*.cover
+.cache
+nosetests.xml
+pytest_cache/
+
+# Dbeaver or DB tools
+*.dbeaver-data-sources.xml
+
+# __pycache__ and compiled objects
+**/__pycache__/
+**/*.pyc
