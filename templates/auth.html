@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Tetris - Login/Signup </title>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+<body>
+    <h1>
+      Tetris<span class="controller">🎮</span>
+    </h1>
+
+    <h2 id="welcome_text"> Welcome to Tetris, Login or Signup </h2>
+
+    <div class="button-group">
+        <button onclick="showLogin()">Login</button>
+        <button onclick="showSignup()">Signup</button>
+    </div>
+
+    <div id="Login-container" class="hidden">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="email" />
+        <input type="password" id="login-password" placeholder="password" />
+        <button type="button" onclick="login()">Login</button>
+        <p id="login-error" class="error"></p>
+    </div>
+
+    <div id="Signup-container" class="hidden">
+        <h2>Signup</h2>
+        <input type="email" id="signup-email" placeholder="email" />
+        <input type="password" id="signup-password" placeholder="password" />
+        <input type="text" id="signup-username" placeholder="username" />
+        <button type="button" onclick="signup()">Signup</button>
+        <p id="signup-error" class="error"></p>
+    </div>
+
+    <button type="button" class="hidden" id="go_back_button" onclick="go_back()">🔙</button>
+
+    <script src="{{ url_for('static', filename='auth.js') }}" defer></script>
+</body>
+
+</html>

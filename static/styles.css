@@ -1,0 +1,136 @@
+body {
+    font-family: 'Coiny', sans-serif;
+    background-color: #FFD7D7;
+    margin: 0;
+    text-align: center;
+  }
+
+h1 {
+    font-size: 7rem;
+    color: #ec5b80;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+h2 {
+    font-size: 3rem;
+    color: #ec5b80;
+    padding-top: 0;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;              
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+button {
+    display: inline-block;
+    font-size: 3rem;
+    background-color: white;
+    color: #FB6f92;
+    width: 300px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Coiny', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+button:hover{
+    background-color:#e5e5e5;
+    transform: scale(1.05);
+}
+
+.controller {
+  display: inline-block;
+  transition: transform 0.1s ease;
+}
+
+.controller:hover {
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+#Login-container {
+  background-color:  #feeaea;
+  padding: 3.5rem;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 400px;
+  margin: 4rem auto;   
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  
+  margin-top: 0.1rem;      
+}
+
+.show-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#Login-container input {
+  width: 80%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+}
+
+#Login-container button {
+  background-color: #FB6f92;
+  color: white;
+  font-size: 1.5rem;
+}
+
+#Signup-container {
+  background-color:  #feeaea;
+  padding: 3.5rem;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 400px;
+  margin: 4rem auto;   
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  
+  margin-top: 0.1rem;      
+}
+
+#Signup-container input {
+  width: 80%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+}
+
+#Signup-container button {
+  background-color: #FB6f92;
+  color: white;
+  font-size: 1.5rem;
+}
+
+#go_back_button {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  border-radius: 100px;
+  background-color: #fdf5f5;
+  width: 100px;
+}
